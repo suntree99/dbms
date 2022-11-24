@@ -41,8 +41,8 @@ Nilianya bisa SIGNED (dari negatif sampai positif) dan UNSIGNED (digeser ke posi
     * ENUM('Pria','Wanita')
     * ENUM('Belum Menikah','Menikah','Cerai')
 
-# Tipe Data Date and Time, dan Boolean
-* Date and Time
+## Tipe Data Date & Time dan Boolean
+* Date & Time
     * DATE -> YYYY-MM-DD
     * DATETIME -> YYYY-MM-DD HH:MM:SS (Penggunaan umum)
     * TIMESTAMP -> YYYY-MM-DD HH:MM:SS (Untuk pencatatan)
@@ -53,8 +53,8 @@ Nilianya bisa SIGNED (dari negatif sampai positif) dan UNSIGNED (digeser ke posi
     * TRUE & FALSE
     * true & false
 
-# Tipe Data Lainnya
-* Tipe Data Advance untuk Kasus Khusus [Lihat Disini](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
+## Tipe Data Lainnya
+* Tipe Data Advance Untuk Kasus Khusus [Lihat Disini](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
     * BLOB
     * SPATIAL
     * JSON
