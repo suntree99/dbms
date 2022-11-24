@@ -61,7 +61,7 @@ truncate barang; -- menghapus seluruh data tabel
 drop table barang; -- mengapus tabel
 
 
-## Update p01_database.md 
+# Update p01_database.md 
 ```bash
 git add .
 git commit -m 'Update p01_database.md.'
