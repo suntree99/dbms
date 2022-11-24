@@ -2,18 +2,18 @@
 
 ## Tipe Data Number
 Nilianya bisa SIGNED (dari negatif sampai positif) dan UNSIGNED (digeser ke positif semua dari 0)
-* Tipe Data Integer
+* Integer
     * TINYINT -> (-127 .. 182)
     * SMALLINT -> (+- 32 ribuan)
     * MEDIUMINT -> (+- 8 jutaan)
     * INT -> (+- 2 milyaran)
     * BIGINT -> (lebih dari INT)
 
-* Tipe Data Floating Point
+* Floating Point
     * FLOAT -> (+- 3.4 E38)
     * DOUBLE -> (+- 1.8 E308)
 
-* Tipe Data Decimal
+* Decimal
     * DECIMAL(total digit, decimal digit)
     * DECIMAL(5,2) -> (-999.99 .. 999.99)
     * DECIMAL(5,0) -> (-99999 .. 99999)
@@ -25,36 +25,36 @@ Nilianya bisa SIGNED (dari negatif sampai positif) dan UNSIGNED (digeser ke posi
     * ZEROFIL -> INT(3) ZEROFILL -> angka 7 akan ditampilkan 007
 
 ## Tipe Data String
-* Tipe Data Char & Varchar
+* Char & Varchar
     * CHAR() & VARCHAR() -> Maksimal 65535 karakter
     * CHAR(10 & VARCHAR(10) -> String yang dibatasi 10 karakter
     * CHAR(4) -> 'ab  ' -> Char akan selalu menggunakn memori maksimal (4 bytes)
     * VARCHAR(4) -> 'ab' -> Varchar menggunakan memori seusuai kebutuhan (3 bytes)
 
-* Tipe Data Text
+* Text
     * TINYTEXT -> 255 karakter (256 bytes)
     * TEXT -> 65535 karakter (64 kb)
     * MEDIUMTEXT -> 16 jutaan karakter (16 MB)
     * LONGTEXT -> 4 milyaran karakter (4 GB)
 
-* Tipe Data Enum (Pilihan)
+* Enum (Pilihan)
     * ENUM('Pria','Wanita')
     * ENUM('Belum Menikah','Menikah','Cerai')
 
-# Tipe Data Date, Time, dan Boolean
-* Tipe Data Date and Time
+# Tipe Data Date and Time, dan Boolean
+* Date and Time
     * DATE -> YYYY-MM-DD
     * DATETIME -> YYYY-MM-DD HH:MM:SS (Penggunaan umum)
     * TIMESTAMP -> YYYY-MM-DD HH:MM:SS (Untuk pencatatan)
     * TIME -> HH:MM:SS
     * YEAR -> YYYY
 
-* Tipe Data Boolean
+* Boolean
     * TRUE & FALSE
     * true & false
 
 # Tipe Data Lainnya
-* Tipe Data Lainya Untuk Kasus Khusus [Lihat Disini](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
+* Tipe Data Advance untuk Kasus Khusus [Lihat Disini](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
     * BLOB
     * SPATIAL
     * JSON
