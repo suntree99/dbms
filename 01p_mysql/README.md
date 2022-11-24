@@ -18,7 +18,7 @@
     * Kunjungi https://www.mysql.com/products/workbench/ -> Klik *Download Now*
     * Lakukan instalasi secara default (atau sesuai kebutuhan)
 
-* JetBrains DataGrip (Aplikasi *berbayar* seperti MySQL Workbench)
+* JetBrains DataGrip (Aplikasi *berbayar* seperti MySQL Workbench, Mendukung database jenis lain)
     * Kunjungi https://www.jetbrains.com/datagrip/ -> Klik *Download Now*
     * Lakukan instalasi secara default (atau sesuai kebutuhan)
 
