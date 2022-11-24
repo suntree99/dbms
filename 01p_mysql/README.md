@@ -24,7 +24,7 @@
 
 ## Pengenalan MySQL
 * MySQL adalah salah satu DBMS (Database Management System) yaitu apliksai untuk mengelola data.
-* Contoh DBMS yang populer seperti MySQL, PostgreSQL, MongoDB, Oracle, dll. [Lihat](https://db-engines.com/en/ranking/relational+dbms)
+* Contoh DBMS yang populer seperti MySQL, PostgreSQL, MongoDB, Oracle, dll. [Lihat disini](https://db-engines.com/en/ranking/relational+dbms)
 * Sintaks SQL tidak case sensitive (incasesensitive), antara show dengan SHOW sama saja.
     * `show engines;` -- menampilkan engines yang tersedia di dalam server 
     * `SHOW DATABASES;` -- menampilkan semua database yanga di dalam server mySQL
