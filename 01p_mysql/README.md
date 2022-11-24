@@ -6,27 +6,27 @@
     * MySQL Workbench
 
 ## 01. Menampilkan Seluruh Database
-```cmd
+```sql
 show databases;
 ```
 
 ## 02. Membuat Database
-```cmd
+```sql
 create database belajar_mysql;
 ```
 
 ## 03. Menghapus Database
-```cmd
+```sql
 drop database belajar_mysql;
 ```
 
 ## 04. Menggunakan Database
-```cmd
+```sql
 use belajar_mysql;
 ```
 
 ## 05. Menampilkan Seluruh Table Dalam Database
-```cmd
+```sql
 show tables;
 ```
 
@@ -88,12 +88,12 @@ show tables;
 
 ## 07. Menampilkan Storage Engine
 Storage Engine digunakan untuk mengolah data, saat ini paling populer adalah InnoDB 
-```cmd
+```sql
 show engines;
 ```
 
 ## 08. Membuat Table
-```cmd
+```sql
 CREATE TABLE barang
 (
     id      INT,
@@ -105,18 +105,18 @@ ENGINE = InnoDB;
 ```
 
 ## 09. Melihat Struktur Table
-```cmd
+```sql
 DESCRIBE barang;
 ```
-```cmd
+```sql
 DESC barang;
 ```
-```cmd
+```sql
 SHOW CREATE TABLE barang;
 ```
 
 ## 10. Mengubah Table
-```cmd
+```sql
 ALTER TABLE barang
     ADD COLUMN column_baru TEXT,
     DROP COLUMN nama,
@@ -126,33 +126,33 @@ ALTER TABLE barang
 ```
 
 * Menambah colom
-```cmd
+```sql
 ALTER TABLE barang
 ADD COLUMN deskripsi TEXT;
 ```
 
 * Menghapus colom
-```cmd
+```sql
 ALTER TABLE barang
 ADD COLUMN salah TEXT;
 ```
-```cmd
+```sql
 ALTER TABLE barang
 DROP COLUMN salah;
 ```
 
 * Mengubah Tipe Data
-```cmd
+```sql
 ALTER TABLE barang
 MODIFY nama VARCHAR(200);
 ```
 
 * Mengubah Posisi Kolom
-```cmd
+```sql
 ALTER TABLE barang
 MODIFY nama VARCHAR(200) AFTER jumlah;
 ```
-```cmd
+```sql
 ALTER TABLE barang
 MODIFY nama VARCHAR(200) FIRST;
 ```
@@ -160,52 +160,52 @@ MODIFY nama VARCHAR(200) FIRST;
 ## 11. Null Value 
 Secara default kolom yang tidak diset NOT NULL akan menjadi nullable
 * Mengeset NOT NUL
-```cmd
+```sql
 ALTER TABLE barang
 MODIFY id INT NOT NULL;
 ```
-```cmd
+```sql
 ALTER TABLE barang
 MODIFY nama VARCHAR(200) NOT NULL;
 ```
 
 ## 12. Default Value
-```cmd
+```sql
 ALTER TABLE barang
 MODIFY jumlah INT NOT NULL DEFAULT 0;
 ```
-```cmd
+```sql
 ALTER TABLE barang
 MODIFY harga INT NOT NULL DEFAULT 0;
 ```
-```cmd
+```sql
 ALTER TABLE barang
 ADD waktu_dibuat TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
 ```
 
 
 ## 13. Menginput Data
-```cmd
+```sql
 INSERT INTO barang (id, nama) VALUES (1, 'Apel');
 ```
 
 ## 14. Menampilkan Data
-```cmd
+```sql
 SELECT * FROM barang;
 ```
 
 ## 15. Mengosongkan Table
-```cmd
+```sql
 TRUNCATE barang;
 ```
 
 ## 16. Menghapus Table
-```cmd
+```sql
 DROP TABLE barang;
 ```
 
 ## 17. Unsign Value
-```cmd
+```sql
 CREATE TABLE
 (
     id          VARCHAR(10) NOT NULL,
@@ -219,302 +219,302 @@ Engine = InnoDB;
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
 ## 01. 
-```cmd
+```sql
 
 ```
 
@@ -548,7 +548,7 @@ git push
 
 ```
 
-```cmd
+```sql
 
 ```
 
