@@ -1,13 +1,13 @@
 # Table
 
-## Menampilkan Seluruh Table Dalam Database
+## Menampilkan Seluruh Table
 ```sql
 show tables;
 ```
 
 ## Menampilkan Storage Engine
 Untuk membuat table perlu menentukan storage engine yang digunakan untuk mengolah data.
-Saat ini paling populer adalah InnoDB 
+Saat ini yang paling populer adalah InnoDB.
 ```sql
 show engines;
 ```
@@ -54,7 +54,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p01_database.md.'
+git commit -m 'Update p03_table.md.'
 git push
 
 ```
