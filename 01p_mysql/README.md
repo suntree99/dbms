@@ -29,7 +29,7 @@
     * `show engines;` -- menampilkan engines yang tersedia di dalam server 
     * `SHOW DATABASES;` -- menampilkan semua database yanga di dalam server mySQL
 
-## Update README.md 
+# Update README.md 
 ```bash
 git add .
 git commit -m 'Update README.md'
