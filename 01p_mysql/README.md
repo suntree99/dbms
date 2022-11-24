@@ -30,7 +30,7 @@
     * `SHOW DATABASES;` -- menampilkan semua database yanga di dalam server mySQL
 
 ## Update README.md 
-```git
+```bash
 git add .
 git commit -m 'Update README.md'
 git push
