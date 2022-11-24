@@ -61,7 +61,7 @@ Nilianya bisa SIGNED (dari negatif sampai positif) dan UNSIGNED (digeser ke posi
     * SET, dll
 
 ##
-# Update p02_data_type.md 
+## Update p02_data_type.md 
 ```bash
 git add .
 git commit -m 'Update p02_data_type.md.'
