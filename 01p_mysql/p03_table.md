@@ -109,8 +109,8 @@ Secara default kolom akan diset menjadi DEFAULT NULL (nullable)
     (
         id      INT NOT NULL,
         nama    VARCHAR (100) NOT NULL,
-        harga   INT NOT NULL DEFAULT 0, -- diset memiliki niali DEAFULT = 0
-        jumlah  INT NOT NULL DEFAULT 0 -- diset memiliki niali DEAFULT = 0
+        harga   INT NOT NULL DEFAULT 0, -- diset memiliki nilai DEAFULT = 0
+        jumlah  INT NOT NULL DEFAULT 0 -- diset memiliki nilai DEAFULT = 0
     )
     ENGINE = InnoDB;
     ```
@@ -118,52 +118,39 @@ Secara default kolom akan diset menjadi DEFAULT NULL (nullable)
 * Mengubah Kolom Agar Memiliki Nilai Default
     ```sql
     ALTER TABLE barang
-    MODIFY jumlah INT NOT NULL DEFAULT 0; -- mengubah kolom 'jumlah' memiliki niali DEAFULT = 0
+    MODIFY jumlah INT NOT NULL DEFAULT 0; -- mengubah kolom 'jumlah' memiliki nilai DEAFULT = 0
     ```
     ```sql
     ALTER TABLE barang
-    MODIFY harga INT NOT NULL DEFAULT 0; -- mengubah kolom 'harga' memiliki niali DEAFULT = 0
+    MODIFY harga INT NOT NULL DEFAULT 0; -- mengubah kolom 'harga' memiliki nilai DEAFULT = 0
     ```
     ```sql
     ALTER TABLE barang
-    ADD waktu_dibuat TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP; -- mengubah kolom 'waktu_dibuat' memiliki niali DEAFULT = CURRENT_TIMESTAMP
+    ADD waktu_dibuat TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+    -- mengubah kolom 'waktu_dibuat' memiliki nilai DEAFULT = CURRENT_TIMESTAMP
     ```
 
-## 13. Menginput Data
-```sql
-INSERT INTO barang (id, nama) VALUES (1, 'Apel');
-```
+## Test NOT NULL Dan Default Value
+* Menginput Data (INSERT INTO)
+    ```sql
+    INSERT INTO barang (id, nama) VALUES (1, 'Apel');
+    ```
 
-## 14. Menampilkan Data
-```sql
-SELECT * FROM barang;
-```
+* Menampilkan Data
+    ```sql
+    SELECT * FROM barang;
+    -- akan ditampilkan nilai default pada kolom yang diset NOT NULL dan memiliki nilai DEFAULT
+    ```
 
-## 15. Mengosongkan Table
+## Mengosongkan Table (TRUNCATE)
 ```sql
 TRUNCATE barang;
 ```
 
-## 16. Menghapus Table
+## Menghapus Table (DROP)
 ```sql
 DROP TABLE barang;
 ```
--- NULL VALUE
-alter table barang modify id int not null; 
-alter table barang modify nama varchar(200) not null; -- memodifikasi field tidak boleh null
--- DEFAULT VALUE
-alter table barang modify harga int not null default 0; -- memodifikasi field dengan menambahkan nilai default
-alter table barang modify jumlah int not null default 0; -- memodifikasi field dengan menambahkan nilai default
-alter table barang add column waktu_dibuat timestamp not null default current_timestamp; -- menambahkan field timestamp dan memberi nilai default
--- MENGINPUT DATA
-insert into barang (id, nama) value (1, 'Apel'); -- menginput data
--- MENAMPILKAN DATA
-select * from barang; -- menampilkan seluruh data
--- MEMBERSIHKAN TABEL
-truncate barang; -- menghapus seluruh data tabel
--- MENGHAPUS TABEL
-drop table barang; -- mengapus tabel
-
 
 ##
 ```bash
