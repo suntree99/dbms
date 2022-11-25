@@ -5,19 +5,19 @@
 show databases;
 ```
 
-## Membuat Database
+## Membuat Database (CREATE)
 ```sql
-create database belajar_mysql; -- membuat database dengan nama 'belajar_mysql'
+CREATE DATABASE belajar_mysql; -- membuat database dengan nama 'belajar_mysql'
 ```
 
-## Menghapus Database
+## Menghapus Database (DROP)
 ```sql
-drop database belajar_mysql;
+DROP DATABASE belajar_mysql;
 ```
 
-## Menggunakan Database
+## Menggunakan Database (USE)
 ```sql
-use belajar_mysql; -- perlu memilih database sebelum membuat table
+USE belajar_mysql; -- perlu memilih database sebelum membuat table
 ```
 
 ## Menampilkan Seluruh Table Dalam Database
