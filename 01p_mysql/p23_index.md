@@ -27,14 +27,14 @@ ENGINE = InnoDB;
 ```
 
 * Describe
-```sql
-DESCRIBE sellers; -- index tidak dapat terlihat 
-```
+    ```sql
+    DESCRIBE sellers; -- index tidak dapat terlihat 
+    ```
 
 * Show Create
-```sql
-SHOW CREATE TABLE sellers; -- index dapat terlihat
-```
+    ```sql
+    SHOW CREATE TABLE sellers; -- index dapat terlihat
+    ```
 
 ## Penggunaan Index
 ```sql
