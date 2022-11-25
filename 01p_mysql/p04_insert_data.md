@@ -1,4 +1,4 @@
-# Insert
+# Insert Data
 
 ## Unsign Value (UNSIGNED)
 Membuat table baru (products) dengan kolom bernilai UNSIGNED

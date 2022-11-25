@@ -1,4 +1,4 @@
-# Select
+# Select Data
 
 ## Memilih Semua Kolom (SELECT *)
 ```sql
