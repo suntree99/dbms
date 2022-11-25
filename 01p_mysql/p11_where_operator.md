@@ -70,11 +70,14 @@ WHERE quantity > 100 OR price > 20000; -- menampilkan data dengan operasi boolea
 ## Prioritas Pada Operator AND & OR
 ```sql
 SELECT * FROM products 
-WHERE (category = 'Makanan' OR quantity > 500) AND price > 20000; -- menampilkan data dengan operasi boolean
--- secara default diprioritaskan operator AND
+WHERE (category = 'Makanan' OR quantity > 500) AND price > 20000;
+-- menampilkan data operasi boolean dengan memproiritaskan yang berada dalam kurung
+-- secara default (jika tidak diberi kurung) diprioritaskan operator AND
 ```
 
-## Operator LIKE
+## Operator LIKE, NOT LIKE, Dan Posisi Wild Card (%)
+* Operator LIKE sangat lambat, tidak disarankan jika datanya terlalu besar
+* Operator LIKE tidak case sensitive, huruf besar dan kecil tidak berpengaruh
 ```sql
 SELECT * FROM products 
 WHERE name LIKE 'mie%'; -- menampilkan data yang kata depannya 'mie'
@@ -87,8 +90,12 @@ WHERE name LIKE '%bakso'; -- menampilkan data yang kata belakangnya 'bakso'
 SELECT * FROM products 
 WHERE name LIKE '%usu%'; -- menampilkan data yang mengandung kata 'usu'
 ```
+```sql
+SELECT * FROM products 
+WHERE name NOT LIKE '%usu%'; -- menampilkan data yang tidak mengandung kata 'usu'
+```
 
-## Operator IS NULL 
+## Operator IS NULL Dan IS NOT NULL
 ```sql
 SELECT * FROM products 
 WHERE description IS NULL; -- menampilkan data yang description nya NULL
@@ -108,7 +115,7 @@ SELECT * FROM products
 WHERE price NOT BETWEEN 10000 AND 20000; -- menampilkan data yang harganya diluar antara 10000 - 20000
 ```
 
-## Operator IN 
+## Operator IN Dan NOT IN
 ```sql
 SELECT * FROM products 
 WHERE category IN ('Makanan', 'Minuman'); -- menampilkan data yang categorinya berada dalam kurung IN
