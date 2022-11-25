@@ -58,12 +58,11 @@ WHERE id = 'P0001'; -- Foreign Key akan menolak menghapus data yang berelasi den
 ```
 
 ## Behaviour Foreign Key
-* Behaviour | ON DELETE ----- | ON UPDATE
-____________________________________________________________________
-* RESTRICT | Ditolak -------- | Ditolak
+* Behaviour | ON DELETE ------- | ON UPDATE
+* RESTRICT | Ditolak ------------ | Ditolak
 * CASCADE | Data akan dihapus | Data akan ikut diubah
-* CASCADE | Data dibiarkan -- | Data dibiarkan
-* SET NULL | Diubah jadi NULL | Diubah jadi NULL | Syarat : Nullable
+* CASCADE | Data dibiarkan --- | Data dibiarkan
+* SET NULL | Diubah jadi NULL - | Diubah jadi NULL | Syarat : Nullable
 
 ## Foreign Key ON DELETE CASCADE ON UPDATE CASCADE
 *  Menghapus Foreign Key
