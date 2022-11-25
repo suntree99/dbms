@@ -58,7 +58,7 @@ WHERE id = 'P0001'; -- Foreign Key akan menolak menghapus data yang berelasi den
 ```
 
 ## Behaviour Foreign Key
-* Behaviour     |   ON DELETE           |   ON UPDATE
+* Behaviour     |   ON DELETE&nbsp&nbsp&nbsp&nbsp           |   ON UPDATE
 --------------------------------------------------------------------------------------
 * RESTRICT      |   Ditolak             |   Ditolak
 * CASCADE       |   Data akan dihapus   |   Data akan ikut diubah
@@ -111,7 +111,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p00_template.md'
+git commit -m 'Update p25_table_relationship.md'
 git push
 
 ```
