@@ -1,4 +1,7 @@
+# Control Flow Function
 
+## Control Flow Function
+Untuk lebih lengkapnya bisa dilihat [Disini](https://dev.mysql.com/doc/refman/8.0/en/flow-control-functions.html)
 
 ```sql
 
