@@ -31,7 +31,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p01_database.md.'
+git commit -m 'Update p01_database.md'
 git push
 
 ```

@@ -158,7 +158,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p03_table.md.'
+git commit -m 'Update p03_table.md'
 git push
 
 ```

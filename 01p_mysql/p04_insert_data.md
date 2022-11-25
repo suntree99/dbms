@@ -40,7 +40,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p04_insert.md.'
+git commit -m 'Update p04_insert.md'
 git push
 
 ```

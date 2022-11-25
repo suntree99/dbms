@@ -20,7 +20,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p07_where_clause.md.'
+git commit -m 'Update p07_where_clause.md'
 git push
 
 ```

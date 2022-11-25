@@ -24,7 +24,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p09_delete_data.md.'
+git commit -m 'Update p09_delete_data.md'
 git push
 
 ```

@@ -131,7 +131,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p11_where_operator.md.'
+git commit -m 'Update p11_where_operator.md'
 git push
 
 ```

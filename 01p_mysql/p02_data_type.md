@@ -66,7 +66,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p02_data_type.md.'
+git commit -m 'Update p02_data_type.md'
 git push
 
 ```

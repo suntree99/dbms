@@ -41,7 +41,7 @@ Update This File
 ```
 ```bash
 git add .
-git commit -m 'Update p06_primary_key.md.'
+git commit -m 'Update p06_primary_key.md'
 git push
 
 ```
