@@ -26,12 +26,7 @@ CREATE TABLE sellers
 ENGINE = InnoDB;
 ```
 
-* Describe
-    ```sql
-    DESCRIBE sellers; -- index tidak dapat terlihat 
-    ```
-
-* Show Create
+* Mengecek Index
     ```sql
     SHOW CREATE TABLE sellers; -- index dapat terlihat
     ```

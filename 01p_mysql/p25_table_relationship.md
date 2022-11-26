@@ -13,16 +13,6 @@ CREATE TABLE wishlist
 ENGINE = InnoDB;
 ```
 
-* Describe
-    ```sql
-    DESCRIBE wishlist;
-    ```
-
-* Show Create
-    ```sql
-    SHOW CREATE TABLE wishlist;
-    ```
-
 ## Menghapus Foreign Key
 ```sql
 ALTER TABLE wishlist
@@ -41,35 +31,38 @@ FOREIGN KEY (id_product) REFERENCES products (id);
 ```
 
 ## Test Foreign Key
-```sql
-INSERT INTO wishlist (id_product, description)
-VALUES ('P0001', 'Makanan Kesukaan');
-```
-```sql
-INSERT INTO wishlist (id_product, description)
-VALUES ('SALAH', 'Makanan Kesukaan'); -- Foreign Key akan menolak data yang tidak ada di tabel yang berelasi
-```
-```sql
-SELECT * FROM wishlist;
-```
-```sql
-DELETE FROM products
-WHERE id = 'P0001'; -- Foreign Key akan menolak menghapus data yang berelasi dengan tabel lain
-```
+* Menambah Wishlist
+    ```sql
+    INSERT INTO wishlist (id_product, description)
+    VALUES ('P0001', 'Makanan Kesukaan');
+    ```
+
+* Menambah Wishlist Dengan Id Yang Tidak Ada
+    ```sql
+    INSERT INTO wishlist (id_product, description)
+    VALUES ('SALAH', 'Makanan Kesukaan'); -- Foreign Key akan menolak data yang tidak ada di tabel yang berelasi
+    ```
+
+* Menghapus Product Dengan Id Yang Direfer Tabel Lain
+    ```sql
+    DELETE FROM products
+    WHERE id = 'P0001'; -- Foreign Key akan menolak menghapus data yang berelasi dengan tabel lain
+    ```
 
 ## Behaviour Foreign Key
+Beberapa behaviour yang terjadi jika melakukan DELETE atau UPDATE pada field REFERENCE
 * RESTRICT (Default)
-    * ON DELETE : Ditolak 
-    * ON UPDATE : Ditolak
+    * ON DELETE : Ditolak (menghapus reference, maka akan ditolak)
+    * ON UPDATE : Ditolak (mengubah reference, maka akan ditolak)
 * CASCADE
-    * ON DELETE : Data akan dihapus
-    * ON UPDATE : Data akan ikut diubah
-* CASCADE
-    * ON DELETE : Data dibiarkan
-    * ON UPDATE : Data dibiarkan
-* SET NULL
-    * ON DELETE : Diubah jadi NULL (Syarat : Nullable)
-    * ON UPDATE : Diubah jadi NULL (Syarat : Nullable)
+    * ON DELETE : Data akan dihapus (menghapus reference, yang merefer akan ikut dihapus)
+    * ON UPDATE : Data akan ikut diubah (mengubah reference, yang merefer akan ikut diubah)
+* NO ACTION
+    * ON DELETE : Data dibiarkan (menghapus reference, yang merefer akan dibiarkan - terputus)
+    * ON UPDATE : Data dibiarkan (mengubah reference, yang merefer akan dibiarkan - terputus)
+* SET NULL (Syarat : Nullable)
+    * ON DELETE : Diubah jadi NULL (menghapus reference, yang merefer akan diset menjadi NULL)
+    * ON UPDATE : Diubah jadi NULL (mengubah reference, yang merefer akan diset menjadi NULL)
 
 ## Foreign Key ON DELETE CASCADE ON UPDATE CASCADE
 *  Menghapus Foreign Key
@@ -82,10 +75,6 @@ WHERE id = 'P0001'; -- Foreign Key akan menolak menghapus data yang berelasi den
     ```sql
     INSERT INTO products (id, name, category, price, quantity)
     VALUES 	('Pxxxx', 'Permen', 'Lain-lain', 500, 1000);
-    ```
-
-    ```sql
-    SELECT * FROM products;
     ```
 
 * Menambahkan Foreign Key ON DELETE CASCADE ON UPDATE CASCADE
@@ -101,11 +90,7 @@ INSERT INTO wishlist (id_product, description)
 VALUES ('Pxxxx', 'Makanan Kesukaan'); -- coba insert beberapa kali
 ```
 
-    ```sql
-    SELECT * FROM wishlist;
-    ```
-
-* Delete di product
+* Delete di Product
     ```sql
     DELETE FROM products
     WHERE id = 'Pxxxx'; -- Data di product akan hilang dan juga menghilangkan yang di wishlist (yang berelasi)

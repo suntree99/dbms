@@ -31,12 +31,7 @@ ALTER TABLE products
 ADD FULLTEXT products_fulltext (name, description);
 ```
 
-* Show Create
-    ```sql
-    SHOW CREATE TABLE products; -- full-text dapat dilihat
-    ```
-
-* Cara konvensional (LIKE)
+* Cara Konvensional (LIKE)
     ```sql
     SELECT * FROM products
     WHERE name LIKE '%mie%' OR description LIKE '%mie%'; -- diurutkan berdasarkan id 
